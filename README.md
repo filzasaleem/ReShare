@@ -55,7 +55,7 @@ To contribute or run this project locally, follow these steps:
 
 1. **Fork and Clone the Repository:**
     ```bash
-    git clone https://github.com/Vardagsbruket/ReShare
+    git clone https://github.com/filzasaleem/ReShare
     cd ReShare
     ```
 
