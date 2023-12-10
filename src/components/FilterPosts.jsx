@@ -18,7 +18,8 @@ export const FilterPosts = () => {
 
   return (
     <div className="filter">
-
+      <div>
+      <label htmlFor="type">Borrow,lend or give away? </label>
       <select onChange={handleType}>
         <option value="" disabled>Borrow/Needed/Give away</option>
         <option value={selectedType}>{selectedType}</option>
@@ -32,8 +33,9 @@ export const FilterPosts = () => {
           )
         )}
       </select>
-
-      {/* <label htmlFor="category">choose category</label> */}
+      </div>
+      <div>
+      <label htmlFor="category">choose category</label>
       <select onChange={handleCategory}>
         <option value={selectedCategory}>{selectedCategory}</option>
         {categoryList.map((category, index) =>
@@ -46,6 +48,7 @@ export const FilterPosts = () => {
           )
         )}
       </select>
+      </div>
       <FilterCity />
     </div>
   );
